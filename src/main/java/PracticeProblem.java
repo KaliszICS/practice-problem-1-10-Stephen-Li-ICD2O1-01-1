@@ -1,4 +1,11 @@
+/*
+Lesson: String Manipulation
+Author: Stephen Li
+Date Created: Feb 26, 2026
+Date Last Modified: Feb 26, 2026
+ */
 
+import java.util.Scanner;
 
 public class PracticeProblem {
 
@@ -14,31 +21,63 @@ public class PracticeProblem {
 	}
 
 	public static void q1() {
-		//Write question 1 code here
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input a sentence: ");
+		String word1 = input.nextLine();
+		System.out.println(word1.contains("on"));
 	}
 
 	public static void q2() {
-		//Write question 2 code here
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input the word mango: ");
+		String word1 = input.nextLine();
+		String word2 = word1.toLowerCase();
+		System.out.println(word2.compareTo("mango") == 0);
 	}
 
 	public static void q3() {
-		//Write question 3 code here
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input a word: ");
+		String word1 = input.nextLine();
+		System.out.print("Input a letter: ");
+		String letter = input.nextLine();
+		System.out.println(word1.indexOf(letter));
+		System.out.println(word1.lastIndexOf(letter));
 	}
 
 	public static void q4() {
-		//Write question 4 code here
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input a sentence: ");
+		String word1 = input.nextLine();
+		int length = word1.length();
+		System.out.println("Your sentence is " + length + " characters long");
 	}
 
 	public static void q5() {
-		//Write question 5 code here
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input a sentence: ");
+		String word1 = input.nextLine();
+		System.out.print("Input a word to replace: ");
+		String word2 = input.nextLine();
+		System.out.print("What word would you like to replace it with: ");
+		String word3 = input.nextLine();
+		System.out.println(word1.replaceAll(word2, word3));
 	}
 
 	public static void q6() {
-		//Write question 6 code here
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input a sentence: ");
+		String word1 = input.nextLine();
+		System.out.println((word1.trim()).toUpperCase());
+		System.out.println((word1.trim()).toLowerCase());
 	}
 
 	public static void q7() {
-		//Write question 7 code here
+		Scanner input = new Scanner(System.in);
+		System.out.print("Input a word: ");
+		String word1 = input.nextLine();
+		System.out.println(word1.substring(0,4));
+		System.out.println(word1.substring(word1.length() - 4));
 	}
 
 	public static void q8() {
